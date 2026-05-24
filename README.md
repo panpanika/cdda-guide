@@ -1,3 +1,6 @@
+little experiment if I could band Nornagons work to CTLG in a reasonable amount of time. It seem I could. CTLG developer is against tools like this so this repo will remain only as experiment.
+
+
 # The Hitchhiker's Guide to the Cataclysm
 
 <img src="src/assets/dont_panic.png" width=300 align="right" />

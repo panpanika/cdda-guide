@@ -21,7 +21,11 @@ let builds:
     }[]
   | null = null;
 
-fetch("https://raw.githubusercontent.com/nornagon/cdda-data/main/builds.json")
+let TLGData = "https://raw.githubusercontent.com/panpanika/cdda-data/main/";
+let TLGDataBuilds = TLGData + "builds.json";
+let TLGRawGH = "https://raw.githubusercontent.com/Cataclysm-TLG/Cataclysm-TLG/";
+
+fetch(TLGDataBuilds)
   .then((d) => d.json())
   .then((b) => {
     builds = b;
@@ -38,39 +42,39 @@ data.setVersion(version, locale);
 const tilesets = [
   {
     name: "AltiCa",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/Altica",
+    url: TLGRawGH + "{version}/gfx/Altica",
   },
   {
     name: "BrownLikeBears",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/BrownLikeBears",
+    url: TLGRawGH + "{version}/gfx/BrownLikeBears",
   },
   {
     name: "Chibi_Ultica",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/ChibiUltica",
+    url: TLGRawGH + "{version}/gfx/ChibiUltica",
   },
   {
     name: "Cuteclysm(Alpha)",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/Cuteclysm",
+    url: TLGRawGH + "{version}/gfx/Cuteclysm",
   },
   {
     name: "Hollow Moon",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/HollowMoon",
+    url: TLGRawGH + "{version}/gfx/HollowMoon",
   },
   {
     name: "MSXotto+",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/MshockXotto%2B",
+    url: TLGRawGH + "{version}/gfx/MshockXotto%2B",
   },
   {
     name: "NeoDays",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/NeoDaysTileset",
+    url: TLGRawGH + "{version}/gfx/NeoDaysTileset",
   },
   {
     name: "RetroDays",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/RetroDaysTileset",
+    url: TLGRawGH + "{version}/gfx/RetroDaysTileset",
   },
   {
     name: "UltiCa",
-    url: "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/{version}/gfx/UltimateCataclysm",
+    url: TLGRawGH + "{version}/gfx/UltimateCataclysm",
   },
 ];
 
