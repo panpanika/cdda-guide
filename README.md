@@ -1,4 +1,4 @@
-little experiment if I could band Nornagons work to CTLG in a reasonable amount of time. It seem I could. CTLG developer is against tools like this so this repo will remain only as experiment.
+little experiment if I could bend Nornagons work to CTLG in a reasonable amount of time. It seems I could. CTLG developer is against tools like this so this repo will remain only as experiment.
 
 
 # The Hitchhiker's Guide to the Cataclysm
